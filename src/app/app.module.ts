@@ -23,6 +23,7 @@ import { fakeBackendProvider } from './_helpers';
 import { BasicAuthInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
   imports: [
@@ -38,7 +39,8 @@ import { LoginComponent } from './login';
   ],
   declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent,
     HomeComponent,
-    LoginComponent],
+    LoginComponent,
+    ForgotPasswordComponent],
   // providers: [],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: BasicAuthInterceptor, multi: true },
